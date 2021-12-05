@@ -1,0 +1,32 @@
+lcd: 
+Tmp:... Smok:...
+
+read temp sensor reading..
+1:
+if temp < 40:
+	print fine
+	no led oppened
+	the motor is not turned on
+
+if temp > 40 && smoke < 50:
+	print Heat
+	Yellow led oppened
+	Turn the smoke sensor on
+	the motor is not turned on
+	
+	check if the temp goes under 40 again
+		if yes
+			go to 1;
+
+
+
+if temp > 50
+	print Fire
+	turn buzzer on
+	red led oppened
+	Turn the smoke sensor on
+	the motor is not turned on
+	
+	check the button to stop the fire system\
+	if the user hits the button and enters the password right:
+		stop the fire system;
